@@ -1,7 +1,7 @@
 data "archive_file" "lambda-archive" {
   type = "zip"
-  source_file = "lambda.py"
-  output_path = "lambda.zip"
+  source_file = "lambda_function/lambda.py"
+  output_path = "lambda_function/lambda.zip"
 }
 
 resource "aws_iam_role" "iam_for_lambda" {
@@ -17,7 +17,7 @@ resource "aws_iam_role" "iam_for_lambda" {
           "Service": "lambda.amazonaws.com"
         },
         "Effect": "Allow",
-        "Sid": ""
+        "Sid": "statement1"
       }
     ]
   }
@@ -25,7 +25,7 @@ resource "aws_iam_role" "iam_for_lambda" {
 }
 
 resource "aws_lambda_function" "greet_lambda" {
-  filename = "lambda.zip"
+  filename = data.archive_file.lambda-archive.output_path
   function_name = "greet_lambda"
   role = aws_iam_role.iam_for_lambda.arn
   handler = "lambda.lambda_handler"

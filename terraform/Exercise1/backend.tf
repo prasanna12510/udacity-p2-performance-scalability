@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-backend-stj"
-    key = "udacity/cand/p2e1/terraform.tfstate"
+    bucket = "udacity-p2-performance-scalability"
+    key = "terraform-backend/exercise1/terraform.tfstate"
     region = "us-east-1"
   }
 }
