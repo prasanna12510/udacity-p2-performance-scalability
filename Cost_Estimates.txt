@@ -1,0 +1,12 @@
+Reduced Cost Estimates:
+change db instance type with required or max threshold in terms of CPU or memory that can handle 50000 connections at a time
+use standard GP2 SSD for RDS
+reduced replicas for DB to 1 (MultiAZ)
+change instance type for EC2(web and app server)
+
+
+Increased Cost Estimates:
+change db instance type with maximum cpu and memory
+increase IOPS and storage size for DB
+add more replicas for DB (MultiAZ)
+increase instance type for EC2(web and app server)
