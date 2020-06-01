@@ -1,0 +1,16 @@
+Group hierarchy,Region,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (Ohio),Elastic Load Balancing,0,149.65,1795.80,USD,Number of Application Load Balancers (2)
+My Estimate,US East (Ohio),Amazon EC2,0,3608.8,43305.60,USD,"Operating system (Linux), Quantity (2), Storage for each EC2 instance (Provisioned IOPS SSD (io1)), Storage amount (64 GB), Provisioning IOPS (20000), Instance type (c5.4xlarge)"
+My Estimate,US East (Ohio),Amazon EC2,0,3737.2799999999997,44847.36,USD,"Operating system (Linux), Quantity (2), Storage for each EC2 instance (Provisioned IOPS SSD (io1)), Storage amount (64 GB), Instance type (m5.4xlarge), Provisioning IOPS (20000)"
+My Estimate,US East (Ohio),Amazon RDS for MySQL,0,9066.84,108802.08,USD,"Quantity (3), Storage for each RDS instance (Provisioned IOPS SSD (io1)), Storage amount (100 GB), Provisioning IOPS (5000), Instance type (db.m5.4xlarge)"
+My Estimate,US East (Ohio),Amazon Elastic IP,0,7.3,87.60,USD,"Number of EC2 instances (2), Number of EIPs per instance (2)"
+My Estimate,US East (Ohio),Amazon Virtual Private Cloud (VPC),0,1084.05,13008.60,USD,Number of NAT Gateways (3)
+My Estimate,US East (Ohio),S3 Standard,0,263.44,3161.28,USD,S3 Standard storage (10 TB per month)
+My Estimate,US East (Ohio),S3 Glacier,0,40.96,491.52,USD,S3 Glacier storage (10 TB per month)
+My Estimate,US East (Ohio),Data Transfer,0,0,0.00,USD,Data Transfer
+My Estimate,US East (Ohio),Amazon CloudWatch,0,25.591,307.09,USD,
+My Estimate,US East (Ohio),AWS Web Application Firewall (WAF),0,660,7920.00,USD,"Number of Web Access Control Lists (Web ACLs) utilized (100 per month), Number of Rules added per Web ACL (100 per month)"
+
+
+
+"AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
